@@ -3,4 +3,3 @@ checkpoints/
 __pycache__/
 .idea/
 preprocessed_data.pt
-preprocessed_data_exp.pt
