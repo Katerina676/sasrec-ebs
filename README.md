@@ -6,6 +6,13 @@
 ## Данные
 
 - Датасет: Amazon Books Reviews (Kaggle)
+- 
+## Метрики
+
+| Модель | NDCG@10 | Recall@10 |
+|--------|---------|-----------|
+| Базовая (dim=64) | 0.440 | 0.534 |
+| Улучшенная (dim=128) | 0.459 | 0.548 |
 
 ## Структура проекта
 
@@ -16,6 +23,8 @@
 | `preprocessing.ipynb` | Предобработка: нормализация, фильтрация, тензоры |
 | `train_model.ipynb`   | Обучение базовой модели |
 | `train_exp.ipynb`     | Эксперимент с hidden_dim=128 и num_negatives=300 |
+| `tisasrec_exp.ipynb` | Эксперимент TiSASRec + RepeatNet |
+| `contrastive_exp.ipynb` | Эксперимент Contrastive Learning + Item Dropout |
 | `main.py`             | Демонстрационный GUI с карточками книг |
 | `tests.ipynb`            | Тестирование (10 тестов) |
 
